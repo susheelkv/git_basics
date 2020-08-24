@@ -64,7 +64,20 @@ $ git add README.md
 ```
 $ git commit "Changes to README" 
 ```
+
+- Check status - git has 3 stages make code changes -> add to staging -> commit code to remote repo
+```
+$ git status
+```
+
 - Push your changes
 ```
 $ git push origin master <br/>
+```
+
+- If you need to delete file from remote repo
+```
+$ git rm <file_name>
+
+$ git push -u origin master
 ```

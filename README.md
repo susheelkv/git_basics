@@ -32,6 +32,15 @@ ssh-rsa xxxxxxx........
 
 ## Working on an existing repository
 
+- Create a directory for local repo, navigate to the dir & initialize git
+```
+git init
+```
+- Add remote URL
+```
+git remote add origin ssh://git@github.com/susheelkv/git_basics.git 
+```
+
 - Set username & email (will show up on your commits)
 
 ```
@@ -39,11 +48,6 @@ git config --global user.name "Your Username"
 
 git config --global user.email "user@userdomain.com" 
 
-```
-
-- Add remote URL
-```
-git remote add origin ssh://git@github.com/susheelkv/git_basics.git 
 ```
 
 - Pull code to local repo

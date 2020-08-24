@@ -12,22 +12,22 @@ article assumes that you are working off of this bash
 - Commands shown below are for macOS
 -- Choose a passphrase (you will be prompted for this when pushing code)
 ```
-susheel {gitrepo}$ ssh-keygen <br/> 
-Generating public/private rsa key pair.<br/>
-Enter file in which to save the key (/Users/susheel/.ssh/id_rsa): <br/> 
-Enter passphrase (empty for no passphrase): <br/>
-Enter same passphrase again: <br/>
-Your identification has been saved in /Users/susheel/.ssh/id_rsa. <br/>
-Your public key has been saved in /Users/susheel/.ssh/id_rsa.pub. <br/>
+susheel {gitrepo}$ ssh-keygen 
+Generating public/private rsa key pair.
+Enter file in which to save the key (/Users/susheel/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /Users/susheel/.ssh/id_rsa. 
+Your public key has been saved in /Users/susheel/.ssh/id_rsa.pub. 
 ```
 - Copy the public key to your git account. (Account -> settings -> SSH keys)
 -- make sure to provide read/write access
 ```
 susheel {gitrepo}$ cat ~/.ssh/id_rsa.pub <br/>
-ssh-rsa xxxxxxx........<br/>
-.... <br/>
-.... <br/>
-.... <br/>
+ssh-rsa xxxxxxx........
+.... 
+.... 
+.... 
 ```
 
 ## Working on an existing repository
@@ -35,30 +35,30 @@ ssh-rsa xxxxxxx........<br/>
 - Set username & email (will show up on your commits)
 
 ```
-git config --global user.name "Your Username" <br/>
+git config --global user.name "Your Username" 
 
-git config --global user.email "user@userdomain.com" <br/>
+git config --global user.email "user@userdomain.com" 
 
 ```
 
 - Add remote URL
 ```
-git remote add origin ssh://git@github.com/susheelkv/git_basics.git <br/>
+git remote add origin ssh://git@github.com/susheelkv/git_basics.git 
 ```
 
 - Pull code to local repo
 ```
-git pull origin master <br/>
+git pull origin master 
 ```
 
-- Add file for commit (README in this case)
+- Add file for commit (README in this case), make your changes
 ```
-git add README.md <br/>
+git add README.md 
+```
 
-- Once your changes are done & you are ready to commit
--- Add a commit comment
+- Add a commit comment
 ```
-git commit "Changes to " <br/>
+git commit "Changes to README" 
 ```
 - Push your changes
 ```

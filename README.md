@@ -58,8 +58,6 @@ $ git pull origin master
 - Add file for commit (README in this case), make your changes
 ```
 $ git add README.md 
-[master 98a85c0] adding missed commands to readme
- 1 file changed, 9 insertions(+), 5 deletions(-)
 ```
 
 - Add a commit comment

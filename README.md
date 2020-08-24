@@ -34,37 +34,39 @@ ssh-rsa xxxxxxx........
 
 - Create a directory for local repo, navigate to the dir & initialize git
 ```
-git init
+$ git init
 ```
 - Add remote URL
 ```
-git remote add origin ssh://git@github.com/susheelkv/git_basics.git 
+$ git remote add origin ssh://git@github.com/susheelkv/git_basics.git 
 ```
 
 - Set username & email (will show up on your commits)
 
 ```
-git config --global user.name "Your Username" 
+$ git config --global user.name "Your Username" 
 
-git config --global user.email "user@userdomain.com" 
+$ git config --global user.email "user@userdomain.com" 
 
 ```
 
 - Pull code to local repo
 ```
-git pull origin master 
+$ git pull origin master 
 ```
 
 - Add file for commit (README in this case), make your changes
 ```
-git add README.md 
+$ git add README.md 
+[master 98a85c0] adding missed commands to readme
+ 1 file changed, 9 insertions(+), 5 deletions(-)
 ```
 
 - Add a commit comment
 ```
-git commit "Changes to README" 
+$ git commit "Changes to README" 
 ```
 - Push your changes
 ```
-git push origin master <br/>
+$ git push origin master <br/>
 ```
